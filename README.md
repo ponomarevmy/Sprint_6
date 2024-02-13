@@ -1,6 +1,6 @@
 # Яндекс практикум Sprint_6
 
-<h2>Привет! Это авто-тесты для сайта qa-scooter.praktikum-services.ru </h2>
+<h2> Привет! Это авто-тесты для сайта qa-scooter.praktikum-services.ru </h2>
 
 Проверка перехода на страницы при клике на логотопы в header - `test_click_on_logo.py`
 <table>

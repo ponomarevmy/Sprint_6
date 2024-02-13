@@ -1,10 +1,8 @@
-import time
 import pytest
 import allure
 import data
 from pages.main_page import MainPage
 from pages.order_page import OrderPage
-import data1
 
 
 class TestOrder:

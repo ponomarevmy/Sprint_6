@@ -3,7 +3,6 @@ from selenium.webdriver.firefox import webdriver
 from selenium import webdriver
 import data
 from locators.main_page_locators import MainPageLocators
-import data1
 
 
 @pytest.fixture(scope='function')

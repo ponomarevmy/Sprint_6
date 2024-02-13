@@ -1,5 +1,6 @@
 from locators.main_page_locators import MainPageLocators
-import data1
+
+
 class Urls:
     # Главная страница
     url_main = 'https://qa-scooter.praktikum-services.ru/'
@@ -37,7 +38,7 @@ class Answers:
 
 class RegistrationDetails:
     reg_data_order = (
-    ['Иван', 'Иванов', 'Красная площадь 1', '+79152227711'], ['Петр', 'Петров', 'Красная площадь 2', '79167778822'])
+        ['Иван', 'Иванов', 'Красная площадь 1', '+79152227711'], ['Петр', 'Петров', 'Красная площадь 2', '79167778822'])
 
 
 class Accordion:

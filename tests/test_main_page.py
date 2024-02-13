@@ -2,7 +2,6 @@ import pytest
 import allure
 from pages.main_page import MainPage
 import data
-import data1
 
 
 class TestAccordion:
