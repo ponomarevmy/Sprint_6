@@ -1,6 +1,6 @@
 # Яндекс практикум Sprint_6
 
-<h2>Привет! Это авто-тесты для сайта qa-scooter.praktikum-services.ru, предоставлено их описание</h2>
+<h2>Привет! Это авто-тесты для сайта qa-scooter.praktikum-services.ru </h2>
 
 Проверка перехода на страницы при клике на логотопы в header - `test_click_on_logo.py`
 <table>
@@ -16,7 +16,7 @@
 	</tbody>
 </table>
 
-Вход -  `test_main_page.py`
+Аккордион на главной странице -  `test_main_page.py`
 <table>
 	<tbody>
 		<tr>
@@ -26,7 +26,7 @@
     </tbody>
 </table>
 
-Переход в личный кабинет - `test_order_page.py`
+Оформление заказ - `test_order_page.py`
 <table>
 	<tbody>
 		<tr>
@@ -47,5 +47,7 @@
 <h4>3 - Allure</h4>
 
 Запуск тестов `pytest -v`
+<br>
 Запуск тестов c формированием отчетов `pytest -v  --alluredir=allure_results`
+<br>
 Посмотреть вэб версию отчета `allure serve allure_results `

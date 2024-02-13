@@ -1,10 +1,11 @@
 from selenium.webdriver.common.by import By
+import data
 
 
 class BasePageLocators:
 
     # Логотип scooter
-    LOGO = [By.XPATH, '//img[@alt="Scooter"]']
+    LOGO_SCOOTER = [By.XPATH, '//img[@alt="Scooter"]']
 
     # Логотип яндекс
     LOGO_YANDEX = [By.XPATH, '//img[@alt="Yandex"]']

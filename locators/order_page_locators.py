@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-
+import data
 
 class OrderPageLocators:
     # Поле ввод имени
