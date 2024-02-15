@@ -12,6 +12,9 @@ def driver():
     driver = webdriver.Firefox(options=firefox_options)
     driver.set_window_size(1920, 1080)
     driver.get(data.Urls.url_main)
-    driver.find_element(*MainPageLocators.COOKIE_LOCATOR).click()
     yield driver
     driver.quit()
+
+@pytest.fixture
+def click_cookie(driver):
+    driver.find_element(*MainPageLocators.COOKIE_LOCATOR).click()

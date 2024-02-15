@@ -1,6 +1,7 @@
 import allure
 from locators.order_page_locators import OrderPageLocators
 from pages.base_page import BasePage
+from pages.main_page import MainPage
 
 
 class OrderPage(BasePage):
@@ -88,3 +89,31 @@ class OrderPage(BasePage):
     @allure.step('Получаем текст кнопки "Проверить статус"')
     def text_in_button_status(self):
         return self.get_text_element(OrderPageLocators.BUTTON_STATUS)
+
+    @allure.step('Заполнение данных на форме "Для кого самокат"')
+    def set_data_order(self, name, surname, address, phone):
+        self.set_name(name)
+        self.set_surname(surname)
+        self.set_address(address)
+        self.click_metro_station()
+        self.check_button_komsomol()
+        self.click_metro_komsomol_st()
+        self.set_phone(phone)
+
+    @allure.step('Заполнение данных на форме "Про аренду"')
+    def set_data_order_about_rent(self):
+        self.check_button_order()
+        self.click_date()
+        self.click_today()
+        self.click_rental_period()
+        self.click_rental_period_choose()
+        self.click_black_color()
+        self.check_button_order()
+        self.click_button_order()
+        self.check_button_yes_is_clickable()
+        self.click_button_yes()
+
+    @allure.step('Проверяем кликабельность кнопки далее и кликаем"')
+    def check_and_lick_check_button_next(self):
+        self.check_button_next()
+        self.click_next()

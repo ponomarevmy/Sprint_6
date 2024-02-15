@@ -14,6 +14,15 @@ class MainPageLocators:
     # Кнопка "Да все привыкли" куки.
     COOKIE_LOCATOR = [By.ID, "rcc-confirm-button"]
 
+    # Логотип scooter
+    LOGO_SCOOTER = [By.XPATH, '//img[@alt="Scooter"]']
+
+    # Логотип яндекс
+    LOGO_YANDEX = [By.XPATH, '//img[@alt="Yandex"]']
+
+    # Заказать из хэдера
+    BUTTON_ORDER_HEADER = [By.XPATH, '//div[@class="Header_Nav__AGCXC"]/button[text()= "Заказать"]']
+
     # Аккордион: 1-8 вопросы и 1-8 ответы
     LIST_0 = [By.ID, 'accordion__heading-0']
     ACCORDION_0 = [By.XPATH, "//div[@id='accordion__panel-0']//p"]
